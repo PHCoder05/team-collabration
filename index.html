@@ -1,64 +1,39 @@
-<Html>  
-    <head>   
-    <title>  
-    Registration Page  
-    </title>  
-    </head>  
-    <body bgcolor="PINK">  
-    <br>  
-    <br>  
-    <form>  
-      
-    <label> Firstname </label>         
-    <input type="text" name="firstname" size="15"/> <br> <br>  
-    <label> Middlename: </label>     
-    <input type="text" name="middlename" size="15"/> <br> <br>  
-    <label> Lastname: </label>         
-    <input type="text" name="lastname" size="15"/> <br> <br>  
-      
-    <label>   
-    Course :  
-    </label>   
-    <select>  
-    <option value="Course">Course</option>  
-    <option value="BCA">BCA</option>  
-    <option value="BBA">BE</option>  
-    <option value="B.Tech">B.Tech</option>  
-    <option value="MBA">MBA</option>  
-    <option value="MCA">MCA</option>  
-    <option value="M.Tech">M.Tech</option>  
-    </select>  
-      
-    <br>  
-    <br>  
-    <label>   
-    Gender :  
-    </label><br>  
-    <input type="radio" name="male"/> Male <br>  
-    <input type="radio" name="female"/> Female <br>  
-    <input type="radio" name="other"/> Other  
-    <br>  
-    <br>  
-      
-    <label>   
-    Phone :  
-    </label>  
-    <input type="text" name="country code"  value="+91" size="2"/>   
-    <input type="text" name="phone" size="10"/> <br> <br>  
-    Address  
-    <br>  
-    <textarea cols="80" rows="5" value="address">  
-    </textarea>  
-    <br> <br>  
-    Email:  
-    <input type="email" id="email" name="email"/> <br>    
-    <br> <br>  
-    Password:  
-    <input type="Password" id="pass" name="pass"> <br>   
-    <br> <br>  
-    Re-type password:  
-    <input type="Password" id="repass" name="repass"> <br> <br>  
-    <input type="button" value="Submit"/>  
-    </form>  
-    </body>  
-    </html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Messages | Firebase</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <form action="" id="contactForm">
+            <div class="alert">Your message sent</div>
+
+            <div class="inputBox">
+                <input type="text" id="name" placeholder="Your name...." />
+            </div>
+
+            <div class="inputBox">
+                <input type="email" id="emailid" placeholder="Your Email....." />
+            </div>
+
+            <div class="inputBox">
+                <textarea id="msgContent" cols="30" rows="10" placeholder="Message"></textarea>
+            </div>
+
+            <div class="inputBox">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="./mail.js"></script>
+</body>
+
+</html>
