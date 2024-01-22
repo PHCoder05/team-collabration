@@ -1,13 +1,12 @@
-
-    const firebaseConfig = {
-        apiKey: "AIzaSyDj7mT645toN-G1B-78YdwoPINmeEPpa7o",
-        authDomain: "team-co.firebaseapp.com",
-        databaseURL: "https://team-co-default-rtdb.firebaseio.com",
-        projectId: "team-co",
-        storageBucket: "team-co.appspot.com",
-        messagingSenderId: "252183411082",
-        appId: "1:252183411082:web:0bc8a35e791e28dfb03073"
-      };
+const firebaseConfig = {
+  apiKey: "AIzaSyCDJ3wW9PchVSEsPSqNs-s1VHOKmcEfY30",
+  authDomain: "team-np-a4b43.firebaseapp.com",
+  databaseURL: "https://team-np-a4b43-default-rtdb.firebaseio.com",
+  projectId: "team-np-a4b43",
+  storageBucket: "team-np-a4b43.appspot.com",
+  messagingSenderId: "18078966307",
+  appId: "1:18078966307:web:86fb0d7776b731d7ecc796"
+};
     //   copy your firebase config informations
   
   // initialize firebase
