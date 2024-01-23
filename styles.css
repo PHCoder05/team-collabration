@@ -98,3 +98,14 @@ body{
     font-weight: 900;
     display: none;
 }
+
+h1{
+     color: blue;
+     background-color: #f2e7e7;
+     text-align: center;
+     font-size: 25px;
+     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     font-weight: 700;
+     
+    
+}
