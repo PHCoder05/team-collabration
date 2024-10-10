@@ -1,55 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Messages | Firebase</title>
     <link rel="stylesheet" href="./styles.css">
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
-
 <body>
     <div class="container">
         <form action="" id="contactForm">
-            <h1> Contact Details : </h1>
+            <h1>Contact Details</h1>
             <div class="alert">Your message sent</div>
-
-            <div class="inputBox">
-                <input type="text" id="name" placeholder="Your name...."  required/>
+            <div class="input-group">
+                <input type="text" id="name" required placeholder=" ">
+                <label for="name">Your Name</label>
             </div>
-
-            <div class="inputBox">
-                <input type="email" id="emailid" placeholder="Your Email....." required/>
+            <div class="input-group">
+                <input type="email" id="emailid" required placeholder=" ">
+                <label for="emailid">Your Email</label>
             </div>
-
-            <div class="inputBox">
-                <textarea id="msgContent" cols="30" rows="10" required placeholder="Message"></textarea>
-
+            <div class="input-group">
+                <textarea id="msgContent" rows="5" required placeholder=" "></textarea>
+                <label for="msgContent">Your Message</label>
             </div>
-
-            <div class="inputBox">
-                <button type="submit">Submit</button>
-            </div>
+            <button type="submit">Submit</button>
         </form>
     </div>
 
+    <!-- Firebase SDK -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    
+    <!-- Your custom JavaScript file -->
     <script src="./mail.js"></script>
+    
+    <!-- Kommunicate Widget -->
     <script type="text/javascript">
-    (function(d, m){
-        var kommunicateSettings = 
-            {"appId":"119d35e9b2adae5aad7a4896be9349cff","popupWidget":true,"automaticChatOpenOnNavigation":true};
-        var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
-        s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
-        var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
-        window.kommunicate = m; m._globals = kommunicateSettings;
-    })(document, window.kommunicate || {});
-/* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
-</script>
+        (function(d, m){
+            var kommunicateSettings = 
+                {"appId":"119d35e9b2adae5aad7a4896be9349cff","popupWidget":true,"automaticChatOpenOnNavigation":true};
+            var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+            s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+            var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+            window.kommunicate = m; m._globals = kommunicateSettings;
+        })(document, window.kommunicate || {});
+    </script>
 </body>
-
 </html>
